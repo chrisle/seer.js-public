@@ -68,10 +68,9 @@ var SeerJs_GoogleScraper = (function() {
         url;
     while(i < len) {
       url = extractUrl(results[i]);
-      if (url) {
+      if (url && url.indexOf('http') == 0) {
         organicData.push(url);
       }
-
       i++;
     }
     return organicData;
