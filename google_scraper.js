@@ -4,7 +4,7 @@
  * @desc    Google Scraper for Google Docs Spreadsheet.
  * @author  Chris Le - @djchrisle - chrisl at seerinteractive.com
  * @license MIT (see: http://www.opensource.org/licenses/mit-license.php)
- * @version 1.0
+ * @version 1.0.1
  * -------------------------------------------------------------------------*/
 
 var SeerJs_GoogleScraper = (function() {

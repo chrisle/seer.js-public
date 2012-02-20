@@ -1,11 +1,5 @@
-Google Scraper for Google Docs
+A public collection of Seer Interactive's Google Docs functions 
 
-1. Click on Tools > Script Editor
-2. Copy and paste everything in google_scraper.js into the editor on the right.
-3. Save it.
-4. In your spreadsheet, use the formula:
-  =googleScraper("my keyword here")
-
-If you want more than 10 results add the number of results you want like this:
-  =googleScraper("my keyword here", 30)
-
+google_scraper.js: Google Scraper for Google Docs Spreadsheet.
+has_google_results.js: Determine if there are any results for a given a keyword / site.
+seomoz.js: Wrapper for SEOmoz API
