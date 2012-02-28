@@ -7,6 +7,14 @@
  * @version 1.0
  * -------------------------------------------------------------------------*/
 
+/**
+ * Credits and history:
+ *   Chris Le:      http://bit.ly/xLop1a
+ *   Tom Anthony:   http://bit.ly/lARZ9u
+ *   Ian Lurie:     http://bit.ly/mBpRXC
+ *   Tom Critchlow: http://bit.ly/xmWlEP
+ */
+
 //----------------------------------------------------------------------------
 // Expose functions to Google Docs
 
