@@ -37,6 +37,7 @@ var SeerJs_GoogleScraper = (function() {
    * @param {array} optResults (Optional) Number of results to return (defaults to 10)
    * @param {string} optTld (Optional) Top level domain (eg: ".co.uk". Defaults to ".com")
    * @param {string} optStart (Optional) Sets the starting offset for results (defaults to 0)
+   * filter=0 Force all results from Google. Important when using large offset
    */
   function fetch(kw, optResults, optTld, optStart) {
     errorOccurred = false;
@@ -44,7 +45,7 @@ var SeerJs_GoogleScraper = (function() {
     optStart = optStart || 0;
     optTld = optTld || '.com';
     try {
-      var url = 'http://www.google' + optTld + '/search?q=' + kw + '&start=' + optStart + '&num=' + optResults;
+      var url = 'http://www.google' + optTld + '/search?q=' + kw + '&start=' + optStart + '&num=' + optResults  + '&filter=0';
       return UrlFetchApp.fetch(url).getContentText()
     } catch(e) {
       errorOccurred = true;
