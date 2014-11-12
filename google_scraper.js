@@ -60,7 +60,7 @@ var SeerJs_GoogleScraper = (function() {
   function extractUrl(result) {
     var url;
     if (result.match(/\/url\?q=/)) {
-      url = getInside(result, "?q=", "&amp");
+      url = decodeURIComponent(getInside(result, "?q=", "&amp"));
       return (url != '') ? url : false
     }
     return false;
