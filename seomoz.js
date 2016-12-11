@@ -124,7 +124,7 @@ SeerJs_.prototype.Utils = (function() {
      * SeerJs.Utils.groupBy([1,2,3,4,5,6], 3); // => [[1,2,3], [4,5,6]]
      */
     groupBy: function(array, size) {
-      if (array.length < size) return [array];
+      if (array.length <= size) return [array];
       var temp = array;
       var first = true;
       var retval = [];
